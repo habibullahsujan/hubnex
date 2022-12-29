@@ -6,12 +6,12 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:w-[85%] mx-auto py-3 ">
-      <nav className="flex justify-between py-6 lg:mx-28 px-6" id="header">
-        <div className="flex items-center lg:pl-0 pl-5">
+    <div className="lg:w-[85%] mx-auto py-3">
+      <nav className="flex justify-between py-6 px-6" id="header">
+        <div className="flex items-center lg:pl-28 pl-5">
           <span className="uppercase text-2xl font-bold">Hubnex.</span>
         </div>
-        <div className="hidden gap-5 lg:flex">
+        <div className="hidden gap-5 lg:flex lg:pr-28">
           <ul className="flex gap-4 font-bold py-3">
             <li>
               {" "}
@@ -67,8 +67,7 @@ const Header = () => {
           <button>
             <a
               href="s"
-              className="border-2 border-gray-400 p-3 rounded-lg tracking-widest"
-            >
+              className="border-2 border-gray-400 p-3 rounded-lg tracking-widest">
               Get Started
             </a>
           </button>
