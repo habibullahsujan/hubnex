@@ -1,6 +1,6 @@
 import React from "react";
+import { CountUp } from "use-count-up";
 import "./Styles.css";
-import CountUp from "react-countup";
 
 const Counts = () => {
   return (
@@ -10,13 +10,7 @@ const Counts = () => {
           <div className="lg:flex justify-between text-center">
             <div className="py-3">
               <span className="text-6xl font-bold text-center">
-                <CountUp start={0} end={200} duration={2}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </CountUp>
+                <CountUp isCounting start={0} end={200} />
               </span>
 
               <p>Businesses Digitized</p>
@@ -24,39 +18,23 @@ const Counts = () => {
 
             <div className="py-3">
               <span className="text-6xl font-bold text-center">
-                <CountUp start={0} end={50} duration={2}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </CountUp>
+                <CountUp isCounting start={0} end={50} />
               </span>
               <p>Selling Products</p>
             </div>
 
             <div className="py-3">
               <span className="text-6xl font-bold text-center">
-                <CountUp start={0} end={130} duration={2}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </CountUp>
+                {" "}
+                <CountUp isCounting start={0} end={130} />
               </span>
               <p>Businesses Making Profits</p>
             </div>
 
             <div className="py-3">
               <span className="text-6xl font-bold text-center">
-                <CountUp start={0} end={1000} duration={2}>
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} />
-                    </div>
-                  )}
-                </CountUp>
+                {" "}
+                <CountUp isCounting start={0} end={1000} />
               </span>
               <p>Business Conversion </p>
             </div>
